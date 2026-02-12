@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+.form-group{
+	width:100%;
+}
+.form-group input{
+	width:100%;
+}
+.table{
+	width:100%;
+}
+.table th{
+	background-color:black;
+	color:white;
+	
+}
+.table td{
+	border-collapse:collapse;
+	border:1px solid  black;
+}
+.table th,td,tr{
+	padding:4px;
+	
+}
+.table-striped tr:nth-child(odd){
+	background-color:gray;
+}
