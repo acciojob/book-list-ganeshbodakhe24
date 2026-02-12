@@ -36,5 +36,12 @@ document.getElementById("book-list").addEventListener("click",function(event){
 		}
 	}
 })
+	let deleteButtons = document.getElementsByClassName("delete");
+
+for (let i = 0; i < deleteButtons.length; i++) {
+	deleteButtons[i].addEventListener("click", function() {
+		this.parentNode.parentNode.remove();
+	});
+}
 	
 })
