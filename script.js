@@ -14,7 +14,7 @@ function addData(data){
 	td2.textContent=data.author;
 	td3.textContent=data.isbn;
 	button.textContent="delete";
-	td4.classList="`delete";
+	td4.classList="delete";
 	td4.append(button)
 	tr.append(td1,td2,td3,td4);
 	tbody.append(tr);
@@ -31,7 +31,9 @@ form.addEventListener("submit", function (event){
 
 document.getElementById("book-list").addEventListener("click",function(event){
 	if(event.target.tagName="button"){
-		event.target.parentNode.parentNode.remove()
+		if(event.target.parentNode.classList.contains("delete")){
+			event.target.parentNode.parentNode.remove()
+		}
 	}
 })
 	
