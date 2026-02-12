@@ -24,3 +24,7 @@
 .table-striped tr:nth-child(odd){
 	background-color:gray;
 }
+.delete{
+	color:red;
+	background-color:red;
+}
