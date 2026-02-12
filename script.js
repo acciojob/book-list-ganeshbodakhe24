@@ -36,7 +36,7 @@ document.getElementById("book-list").addEventListener("click",function(event){
 		}
 	}
 })
-	let deleteButtons = document.querySelector(".delete");
+let deleteButtons = document.querySelectorAll(".delete");
 
 for (let i = 0; i < deleteButtons.length; i++) {
 	deleteButtons[i].addEventListener("click", function() {
