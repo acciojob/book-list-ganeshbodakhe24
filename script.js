@@ -14,7 +14,7 @@ function addData(data){
 	td2.textContent=data.author;
 	td3.textContent=data.isbn;
 	button.textContent="delete";
-	button.classList="`delete";
+	td4.classList="`delete";
 	td4.append(button)
 	tr.append(td1,td2,td3,td4);
 	tbody.append(tr);
